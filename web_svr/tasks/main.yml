@@ -9,10 +9,14 @@
     src: index.html.j2
     dest: /var/www/html/index.html
 
-- name: start httpd
+#- name: start httpd
+  #systemd:
+    #name: httpd
+    #state: started
+    #enabled: yes
+- name: start service
   systemd:
-    name: httpd
+    name: service
     state: started
     enabled: yes
-
 
