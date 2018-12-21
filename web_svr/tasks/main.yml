@@ -14,3 +14,9 @@
     name: httpd
     state: started
     enabled: yes
+
+- name: start service
+  systemd:
+    name: service
+    state: started
+    enabled: yes
