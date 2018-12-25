@@ -15,7 +15,7 @@
 
 #systemctl
   - name: Is httpd service enabled?
-    shell: service is-enabled httpd
+    shell: service enabled httpd
     register: result_enabled
 
   - name: Is port 80 opened?
