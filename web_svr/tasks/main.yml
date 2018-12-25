@@ -16,12 +16,12 @@
     dest: /var/www/html/index.html
 
 - name: start httpd
-  systemd:
+  service:
     name: httpd
     state: started
     enabled: yes
 #- name: start service
-  #systemd:
+  #service:
     #name: service
     #state: started
     #enabled: yes
