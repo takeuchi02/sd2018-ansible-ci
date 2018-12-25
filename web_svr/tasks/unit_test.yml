@@ -13,8 +13,9 @@
     shell: ps -ef | grep http[d]
     register: result_proc
 
+#systemctl
   - name: Is httpd service enabled?
-    shell: systemctl is-enabled httpd.service
+    shell: service is-enabled httpd
     register: result_enabled
 
   - name: Is port 80 opened?
