@@ -1,14 +1,14 @@
 ---
 
-#- name: install httpd package
-  #yum:
-    #name: httpd
-    #state: latest
-
-- name: install service package
+- name: install httpd package
   yum:
-    name: service
+    name: httpd
     state: latest
+
+#- name: install service package
+  #yum:
+    #name: service
+    #state: latest
 
 - name: put index.html
   template:
